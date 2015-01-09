@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @song.title %>
+</p>
+
+<p>
+  <strong>Subtitle:</strong>
+  <%= @song.subtitle %>
+</p>
+
+<p>
+  <strong>Length seconds:</strong>
+  <%= @song.length_seconds %>
+</p>
+
+<p>
+  <strong>Completed:</strong>
+  <%= @song.completed %>
+</p>
+
+<p>
+  <strong>Tracker:</strong>
+  <%= @song.tracker %>
+</p>
+
+<p>
+  <strong>Free:</strong>
+  <%= @song.free %>
+</p>
+
+<p>
+  <strong>External:</strong>
+  <%= @song.external %>
+</p>
+
+<p>
+  <strong>Skipped:</strong>
+  <%= @song.skipped %>
+</p>
+
+<%= link_to 'Edit', edit_song_path(@song) %> |
+<%= link_to 'Back', songs_path %>
